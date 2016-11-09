@@ -1,0 +1,44 @@
+execute pathogen#infect()
+syntax on
+
+filetype plugin indent on
+
+set background=dark
+colorscheme solarized
+
+set expandtab
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set tabstop=4
+
+autocmd FileType c,make setlocal noexpandtab shiftwidth=8 softtabstop=8 tabstop=8
+autocmd FileType typescript,javascript,json,less,ruby,sass,scss,sql,vim,zsh setlocal shiftwidth=2 softtabstop=2 tabstop=2
+
+"WINDOWS
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"NERDTREE
+map <C-n> :NERDTreeToggle<CR>
+
+nnoremap <up>    <nop>
+nnoremap <left>  <nop>
+nnoremap <down>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
+
+inoremap jj <esc>
+
+set number
+set colorcolumn=80
+set hidden
+set formatoptions=cro
+set pastetoggle=<F10>
+set noswapfile
+set cursorline
